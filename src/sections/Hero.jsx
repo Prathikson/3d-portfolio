@@ -5,6 +5,7 @@ import HeroExperience from '../components/HeroModels/HeroExperience'
 import {useGSAP} from '@gsap/react';
 import gsap from 'gsap';
 import AnimatedCounter from '../components/AnimatedCounter';
+import GlowButton from '../components/GlowButton';
 
 
 const Hero = () => {
@@ -59,6 +60,8 @@ const Hero = () => {
                 className="md:w-80 md:h-16 w-60 h-12 relative z-20"
                 id="counter"
               />
+
+
             </div>
           </header>
   

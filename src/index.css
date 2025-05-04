@@ -37,6 +37,7 @@ section {
   .flex-col-center {
     @apply flex flex-col justify-center items-center;
   }
+
 }
 
 @layer components {
@@ -473,4 +474,71 @@ section {
 
 .card:hover::before {
   opacity: 1;
+}
+
+
+/* //GloW button */
+
+.glow-button {
+  --start: 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-color: black;
+  transition: border-color 1s ease-in-out;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.glow-button::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: inherit;
+  border: 2px solid transparent;
+  background: var(--gradient, linear-gradient(90deg, #00f0ff, #ff00e6));
+  background-attachment: fixed;
+
+  mask: linear-gradient(#0000, #0000),
+    conic-gradient(
+      from calc((var(--start) - 15) * 1deg),
+      #ffffff1f 0deg,
+      white,
+      #ffffff00 100deg
+    );
+  mask-composite: intersect;
+  mask-clip: padding-box, border-box;
+
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glow-button:hover::before {
+  opacity: 1;
+}
+
+.glow-button .glow {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(10px) saturate(200%);
+  z-index: 0;
+}
+
+.glow-button .content {
+  position: relative;
+  z-index: 1;
 }
