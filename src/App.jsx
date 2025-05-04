@@ -5,16 +5,18 @@ import Navbar from './components/Navbar'
 import LogoSection from './sections/LogoSection'
 import FeatureCards from './sections/FeatureCards'
 import ExperienceSection from './sections/ExperienceSection'
+import AboutSection from './sections/AboutSection'
 
 const App = () => {
   return (
     <>
     <Navbar/>
     <Hero />
-    <ShowcaseSection/>
     <LogoSection/>
-    <FeatureCards/>
+    <AboutSection/>
     <ExperienceSection/>
+    <FeatureCards/>
+    <ShowcaseSection/>
     </>
   )
 }
