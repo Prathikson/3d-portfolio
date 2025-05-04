@@ -431,6 +431,7 @@ section {
   z-index: 40;
   overflow: hidden;
   transition: border-color 1s ease-in-out;
+  background-color: black;
 }
 
 .card::before {
