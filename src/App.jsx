@@ -14,8 +14,8 @@ const App = () => {
     <Hero />
     <LogoSection/>
     <AboutSection/>
-    <ExperienceSection/>
     <FeatureCards/>
+    <ExperienceSection/>
     <ShowcaseSection/>
     </>
   )
