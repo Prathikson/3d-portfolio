@@ -45,7 +45,7 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section id="about" className="w-full md:mt-20 mt-10 section-padding xl:px-0">
+    <section id="about" className="w-full md:mt-20 mt-10 section-padding xl:px-10">
       <div className="w-full h-full md:px-20 px-5">
         <TitleHeader title="Me and My World" sub="❤️ About me" />
         <div className="mt-20 flex flex-col gap-8 mb-28">
