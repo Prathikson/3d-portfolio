@@ -39,7 +39,10 @@ const GlowButton = ({ text, children, onClick, id = '', className = '' }) => {
       onClick={handleClick}
     >
       <span className="glow" />
-      <span className="content">{text || children}</span>
+      <span className="content flex items-center gap-2">
+        {text || children}
+        <img src='/images/arrow-up-right.svg' alt="icon" className="w-5 h-5" />
+      </span>
     </button>
   );
 };

@@ -3,6 +3,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import TitleHeader from "../components/TitleHeader";
+import ViewLiveSite from "../components/ViewLiveSite";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -44,6 +46,7 @@ const AppShowcase = () => {
     });
   }, []);
 
+
   return (
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full ">
@@ -65,6 +68,9 @@ const AppShowcase = () => {
                 An app built with React Native, Expo, & TailwindCSS for a fast,
                 user-friendly experience.
               </p>
+              <ViewLiveSite
+              href=""
+              />
             </div>
           </div>
 
@@ -77,6 +83,11 @@ const AppShowcase = () => {
                 />
               </div>
               <h2>The Library Management Platform</h2>
+              <div className="mt-5">
+              <ViewLiveSite
+              href=""
+              />
+              </div>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
@@ -84,6 +95,11 @@ const AppShowcase = () => {
                 <img src="/images/project3.png" alt="YC Directory App" />
               </div>
               <h2>YC Directory - A Startup Showcase App</h2>
+              <div className="mt-5">
+              <ViewLiveSite
+              href=""
+              />
+              </div>
             </div>
           </div>
         </div>

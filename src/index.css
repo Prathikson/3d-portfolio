@@ -491,13 +491,17 @@ section {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  background-color: black;
-  transition: border-color 1s ease-in-out;
-  color: white;
+  background-color: white;
+  transition: all 0.3s ease;
+  color: black;
   padding: 0.75rem 1.5rem;
   border-radius: 15px;
   cursor: pointer;
-  transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+  background-color: #1b1b1b;
+  color: white;
 }
 
 .glow-button::before {
@@ -510,7 +514,7 @@ section {
   transform: translate(-50%, -50%);
   border-radius: inherit;
   border: 2px solid transparent;
-  background: var(--gradient, linear-gradient(90deg, #00f0ff, #ff00e6));
+  background: var(--gradient, linear-gradient(90deg, #0004ff, #5900ff));
   background-attachment: fixed;
 
   mask: linear-gradient(#0000, #0000),
