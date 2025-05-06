@@ -1,11 +1,12 @@
 import React from 'react'
 import { words } from '../constants'
 import Button from '../components/Button'
-import HeroExperience from '../components/HeroModels/HeroExperience'
 import {useGSAP} from '@gsap/react';
 import gsap from 'gsap';
 import AnimatedCounter from '../components/AnimatedCounter';
 import GlowButton from '../components/GlowButton';
+import HeroExperience from '../components/Models/HeroModels/HeroExperience';
+
 
 
 const Hero = () => {
@@ -68,7 +69,7 @@ const Hero = () => {
           {/* RIGHT: 3D Model or Visual */}
           <figure>
             <div className="hero-3d-layout">
-              <HeroExperience />
+              <HeroExperience/>
             </div>
           </figure>
         </div>
