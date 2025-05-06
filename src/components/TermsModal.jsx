@@ -36,7 +36,7 @@ const TermsModal = ({ onClose }) => {
 
         <div className="max-h-[300px] overflow-y-auto pr-1 custom-scrollbar">
           <p className="text-sm leading-relaxed text-gray-300 space-y-3">
-            This website is operated by [Your Name or Company]. The content provided is for general informational purposes only and may be updated or changed at any time.
+            This website is operated by Prathikson and Team. The content provided is for general informational purposes only and may be updated or changed at any time.
             <br /><br />
             By accessing or using this website, you agree to comply with and be bound by these terms. You may not republish, reproduce, or distribute any content without prior written permission.
             <br /><br />
