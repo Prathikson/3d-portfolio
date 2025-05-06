@@ -42,7 +42,7 @@ const TermsModal = ({ onClose }) => {
             <br /><br />
             We reserve the right to suspend or terminate access to the site for users who violate our terms.
             <br /><br />
-            For full details, please contact us directly.
+            For full details, please contact us directly. Enjoy Your Visit 🌟
           </p>
         </div>
       </div>
