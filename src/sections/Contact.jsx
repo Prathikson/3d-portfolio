@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ContactExperience from '../components/Models/contact/ContactExperience'
 import TitleHeader from "../components/TitleHeader";
+import ScratchReveal from "../components/ScratchReveal";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -40,7 +41,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="flex-center section-padding">
-      <div className="w-full h-full md:px-10 px-5">
+      <div className="w-full h-full md:px-10 px-5 mb-10">
         <TitleHeader
           title="Get in Touch – Let’s Connect"
           sub="💬 Have questions or ideas? Let’s talk! 🚀"
@@ -107,9 +108,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="xl:col-span-7 min-h-96">
-            <div className="bg-[#1b1b1b] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden justify-center">
-              <img src="/images/LogoContact.png" alt="logo"/>
-            </div>
+              <ScratchReveal imageSrc="/images/LogoContact.png" />
           </div>
         </div>
       </div>

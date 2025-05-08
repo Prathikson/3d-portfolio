@@ -13,6 +13,8 @@ body {
   color: white;
   scroll-behavior: smooth;
   font-family: "Mona Sans", sans-serif;
+  cursor: none;
+
 }
 
 section {
@@ -568,3 +570,4 @@ section {
 .custom-scrollbar::-webkit-scrollbar-track {
   background: transparent;
 }
+
