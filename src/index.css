@@ -23,14 +23,15 @@ section {
 
 @theme {
   --font-sans: "Mona Sans", sans-serif;
-  --color-white-50: #d9ecff;
-  --color-black-50: #1c1c21;
+  --color-white-50: #ffffff;
+  --color-black-50: #1b1b1b;
   --color-black-100: #0e0e10;
   --color-black-200: #282732;
   --color-blue-50: #839cb5;
   --color-blue-100: #2d2d38;
   --color-black-75: #121212;
   --color-yellow-75: #FFCC00;
+  --color-red-25: ##FF0000;
 }
 
 @layer utilities {
@@ -217,12 +218,12 @@ section {
   }
 
   .cta-button {
-    @apply px-4 py-4 rounded-lg bg-black-200 flex justify-center items-center relative cursor-pointer overflow-hidden;
+    @apply px-4 py-4 rounded-lg bg-black-50 flex justify-center items-center relative cursor-pointer overflow-hidden;
 
     .bg-circle {
       @apply absolute -right-10 origin-center top-1/2 -translate-y-1/2 
         w-[120%] h-[120%] group-hover:size-10 group-hover:right-10
-        rounded-full bg-white-50 transition-all duration-500;
+        rounded-full bg-white transition-all duration-500;
     }
 
     .text {
