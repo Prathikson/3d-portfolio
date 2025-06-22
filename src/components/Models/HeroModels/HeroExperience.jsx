@@ -11,7 +11,7 @@ const HeroExperience = () => {
   const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
 
   return (
-    <Canvas shadows camera={{ position: [0, 0, 15], fov: 45 }} shadows>
+    <Canvas shadows camera={{ position: [0, 0, 15], fov: 45 }}>
       <ambientLight intensity={0.2} color="#1a1a40" />
       <OrbitControls
         enablePan={false}

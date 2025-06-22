@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 :root {
-  --gradient: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
+  --gradient: radial-gradient(circle, #de0f3f 0%, #de0f4f 100%);
 }
 
 html,
@@ -26,12 +26,13 @@ section {
   --color-white-50: #ffffff;
   --color-black-50: #1b1b1b;
   --color-black-100: #0e0e10;
-  --color-black-200: #282732;
+  --color-black-200: #222222;
   --color-blue-50: #839cb5;
   --color-blue-100: #2d2d38;
   --color-black-75: #121212;
   --color-yellow-75: #FFCC00;
-  --color-red-25: ##FF0000;
+  --color-red-25: #FF0000;
+  --color-red-30: #de0f3f;
 }
 
 @layer utilities {
@@ -144,7 +145,7 @@ section {
           }
 
           .underline {
-            @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full;
+            @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-red-30 transition-all duration-300 group-hover:w-full;
           }
         }
       }
@@ -154,7 +155,7 @@ section {
       @apply flex;
 
       .inner {
-        @apply px-5 py-2 rounded-lg bg-white text-black group-hover:bg-black-50 transition-colors duration-300;
+        @apply px-5 py-2 rounded-lg bg-white text-black group-hover:bg-red-30 group-hover:text-white transition-colors duration-300;
 
         span {
           @apply group-hover:text-white transition-colors duration-300;
@@ -223,16 +224,16 @@ section {
     .bg-circle {
       @apply absolute -right-10 origin-center top-1/2 -translate-y-1/2 
         w-[120%] h-[120%] group-hover:size-10 group-hover:right-10
-        rounded-full bg-white transition-all duration-500;
+        rounded-full bg-red-30 transition-all duration-500;
     }
 
     .text {
-      @apply uppercase md:text-lg text-black transition-all duration-500
+      @apply uppercase md:text-lg text-white transition-all duration-500
         group-hover:text-white-50 group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
     }
 
     .arrow-wrapper {
-      @apply group-hover:bg-white-50 size-10 rounded-full absolute right-10 top-1/2 
+      @apply group-hover:bg-red-30 size-10 rounded-full absolute right-10 top-1/2 
         -translate-y-1/2 flex justify-center items-center overflow-hidden;
 
       img {
@@ -272,7 +273,7 @@ section {
   .tech-card-animated-bg {
     @apply absolute left-0 bottom-[-100%] w-full h-full group-hover:bottom-0 transition-all duration-700 rounded-xl z-0;
 
-    background-image: linear-gradient(135deg, #1b1b1b, #000000, #818181);
+    background-image: linear-gradient(135deg, #222222, #de0f3f, #818181);
   }
   .tech-card-content {
     @apply flex flex-col md:justify-center items-center xl:gap-5 xl:h-[50vh] overflow-hidden relative z-10 group-hover:cursor-grab;
@@ -383,10 +384,10 @@ section {
   background: linear-gradient(
     0deg,
     rgba(69, 222, 196, 0) 0%,
-    #62e0ff 25%,
-    #52aeff 37.51%,
-    #fd5c79 62.83%,
-    #6d45ce 92.91%
+    #ff5f24 25%,
+    #ff914d 37.51%,
+    #ff3131 62.83%,
+    #01a1e3 92.91%
   );
 }
 

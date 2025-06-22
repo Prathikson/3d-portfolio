@@ -72,10 +72,10 @@ const AboutSection = () => {
                   <div
                     key={hobby.title}
                     ref={(el) => hobbyRefs.current[index] = el} // Assign the ref for each element
-                    className="inline-flex items-center gap-2 px-6 py-1.5 absolute bg-gradient-to-r from-white/80 to-white rounded-full"
+                    className="inline-flex items-center gap-2 px-6 py-1.5 absolute bg-gradient-to-r from-white/20 to-red-30 rounded-full"
                     style={{ left: hobby.left, top: hobby.top }}
                   >
-                    <span className="font-medium text-black">{hobby.title}</span>
+                    <span className="font-medium text-white">{hobby.title}</span>
                     <span>{hobby.emoji}</span>
                   </div>
                 ))}

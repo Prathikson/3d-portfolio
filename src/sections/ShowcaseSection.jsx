@@ -61,43 +61,42 @@ const AppShowcase = () => {
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+                On-Demand Mp4 to Mp3 converter
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
+                An app built with Next Js & TailwindCSS and Express Js for a fast,
                 user-friendly experience.
               </p>
               <ViewLiveSite
-              href=""
+              href="https://mp4-to-mp3-frontend.vercel.app/"
               />
             </div>
           </div>
 
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={libraryRef}>
-              <div className="image-wrapper bg-[#FFEFDB]">
+              <div className="image-wrapper bg-[#003934]">
                 <img
                   src="/images/project2.png"
                   alt="Library Management Platform"
                 />
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>The Meeting Notes taker AI</h2>
               <div className="mt-5">
               <ViewLiveSite
-              href=""
+              href="https://notez-ai-frontend.vercel.app/"
               />
               </div>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
-              <div className="image-wrapper bg-[#FFE7EB]">
+              <div className="image-wrapper bg-[#e4e4e4]">
                 <img src="/images/project3.png" alt="YC Directory App" />
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>Mock Interview - Practice AI</h2>
               <div className="mt-5">
               <ViewLiveSite
-              href=""
+              href="https://interview-ai-dun.vercel.app/sign-in"
               />
               </div>
             </div>

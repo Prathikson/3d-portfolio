@@ -18,7 +18,7 @@ const Footer = () => {
               onKeyDown={(e) =>
                 (e.key === "Enter" || e.key === " ") && setShowModal(true)
               }
-              className="cursor-pointer text-sm text-white-50 underline hover:text-white/60 transition focus:outline-none"
+              className="cursor-pointer text-sm text-white-50 underline hover:text-red-30 transition focus:outline-none"
             >
               Terms & Conditions
             </p>

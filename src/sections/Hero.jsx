@@ -39,9 +39,9 @@ const Hero = () => {
                           <img
                             src={word.imgPath}
                             alt="person"
-                            className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
+                            className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-red-30"
                           />
-                          <span>{word.text}</span>
+                          <span className='text-red-30'>{word.text}</span>
                         </span>
                       ))}
                     </span>
