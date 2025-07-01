@@ -1,7 +1,9 @@
 // App.jsx
 import React, { useState } from 'react';
-import Preloader from './components/Preloader';
+import useLenis from './hooks/useLenis'; // ✅ Import the hook
 
+// your existing imports
+import Preloader from './components/Preloader';
 import Hero from './sections/Hero';
 import ShowcaseSection from './sections/ShowcaseSection';
 import Navbar from './components/Navbar';
@@ -17,6 +19,7 @@ import CrosshairCursor from './components/CrosshairCursor';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
+  useLenis(); 
 
   const handlePreloaderComplete = () => {
     setIsLoading(false);
@@ -24,11 +27,11 @@ const App = () => {
 
   return (
     <>
-    <CrosshairCursor/>
+      <CrosshairCursor />
       {isLoading && <Preloader onComplete={handlePreloaderComplete} />}
 
       {!isLoading && (
-        <>
+        <div data-lenis-scroll-container>
           <Navbar />
           <Hero />
           <LogoSection />
@@ -40,7 +43,7 @@ const App = () => {
           <Testimonials />
           <Contact />
           <Footer />
-        </>
+        </div>
       )}
     </>
   );

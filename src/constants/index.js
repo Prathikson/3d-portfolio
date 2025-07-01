@@ -156,11 +156,16 @@ const expCards = [
     logoPath: "/images/logo1.png",
     title: "Information Technology Specialist",
     date: "July 2023 - Present",
-    responsibilities: [
-      "Developed and maintained user-facing features for the Engrit AI website and Engrity Group Website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
-    ],
+responsibilities: [
+  "Troubleshot hardware, software, and networking issues across various devices and platforms.",
+  "Implemented and maintained IT infrastructure and networking systems for Engrity.",
+  "Developed custom internal software tools for workflow automation and operational efficiency.",
+  "Built and maintained corporate websites for both Engrity and Vingrity, ensuring performance and uptime.",
+  "Oversaw the research and development of the Engrity App to connect contractors directly with clients.",
+  "Led the implementation of AI-powered solutions and internal AI chatbots to enhance operations and client services.",
+  "Provided AI development as a service to external clients, including chatbot integration and automation solutions.",
+],
+
   },
   {
     review: "Prathik's contributions to Engrity's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
@@ -168,11 +173,15 @@ const expCards = [
     logoPath: "/images/logo2.png",
     title: "Freelance Software Developer",
     date: "June 2022 - December 2022",
-    responsibilities: [
-      "Led the development of Engrity's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
-    ],
+responsibilities: [
+  "Developed complete game stages and puzzle mechanics using Unity for a freelance game project.",
+  "Performed rigorous testing and debugging to ensure smooth, error-free gameplay and visual flow.",
+  "Conducted regression testing to enhance user experience and maintain stability across builds.",
+  "Implemented and improved reusable methods and logic for optimized performance.",
+  "Created game design elements, tweaked visuals, and implemented cutscenes and dialogue triggers using Fungus.",
+  "Worked closely with the Vinell Development Team to deliver a professional-grade game product.",
+],
+
   },
   {
     review: "Prathik's work on Notez AI app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
@@ -180,11 +189,13 @@ const expCards = [
     logoPath: "/images/logo3.png",
     title: "Intern Software Developer",
     date: "April 2022 - June 2022",
-    responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Notez AI backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
-    ],
+responsibilities: [
+  "Collaborated with senior developers to implement puzzles, UI/UX elements, triggers, and in-game utilities using Unity.",
+  "Utilized Fungus to manage game flow logic, hint systems, and dialogue triggers.",
+  "Worked under supervision to contribute to various game stages and interactive components.",
+  "Gained hands-on experience in using methods, classes, and algorithms relevant to game development.",
+  "Followed best practices for game architecture, clean code, and collaboration within a development team.",
+],
   },
 ];
 

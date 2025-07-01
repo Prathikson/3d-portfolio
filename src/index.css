@@ -573,3 +573,15 @@ section {
   background: transparent;
 }
 
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-scroll-container] {
+  will-change: transform;
+}
